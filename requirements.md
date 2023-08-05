@@ -32,11 +32,14 @@
 |Shop Page          |- show the item in the shop            |- crud shop item|
 |Tourism Page       |- show some toursim place in 'al-salt'| |
 
-## Models
+## DB Modeling
+### ERM Digram
 
 ![ERM](./img/beit-aziz-erm.png)
 
-### shared models
+### Models
+
+#### shared models
 
 `news_and_highlight` (id, img, desc)
 
@@ -44,13 +47,13 @@
 
 `customer` (id, name,firstn_name,last_name,address, phone_number)
 
-### boutique app
+#### boutique app
 
 `room` (id, desc, location, img)
 
 `reserve` (custumer_id, room_id, check_in_time,check_out_time)
 
-### restaurant app
+#### restaurant app
 
 `table` (id, capacity)
 
@@ -66,6 +69,6 @@
 
 `food_category`(category_name, food_id)
 
-### shop app
+#### shop app
 
 `shop_item` (id, name,desc, img,price)
